@@ -20,7 +20,7 @@ Customer churn is a critical business metric for telecom companies, representing
 ## 📂 Project Structure
 
 ```
-Telecom-Customer-Churn/
+telecom-customer-churn-analysis/
 │
 ├── customerchurn_analysis.ipynb        # Jupyter notebook with data preprocessing & EDA
 ├── CustomerChurn.pbix                  # Power BI dashboard screenshot
