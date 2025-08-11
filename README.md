@@ -1,75 +1,91 @@
+# 📊 Telecom Customer Churn Analysis
 
+## 📌 Project Overview
 
-## Overview
+This project focuses on analyzing customer churn for a telecom company using **Power BI** for visualization and an accompanying **Jupyter Notebook** for data preprocessing, exploration, and insights generation.
 
-This project predicts customer churn using data analysis, machine learning, and an interactive Power BI dashboard.
-It helps businesses identify at-risk customers and take proactive steps to retain them.
+Customer churn is a critical business metric for telecom companies, representing the percentage of customers who discontinue their services. The goal of this analysis is to identify key patterns, customer behaviors, and service features that contribute to churn, enabling data-driven retention strategies.
 
-## Dataset
+---
 
-The dataset contains telecom customer details such as:
+## 🛠️ Tools & Technologies Used
 
-* Contract type
-* Tenure
-* Monthly charges
-* Payment method
-* Churn status
+* **Python** (Pandas, NumPy, Matplotlib, Seaborn) – for data preprocessing & EDA
+* **Jupyter Notebook** – for interactive analysis
+* **Power BI** – for dashboard design & interactive visualization
+* **Dataset** – Telecom customer churn dataset (contains demographics, service details, and churn status)
 
+---
 
-## Steps Performed
+## 📂 Project Structure
 
-**1. Data Cleaning** – handled missing values, performed data type conversions.
-**2. Exploratory Data Analysis (EDA)** – visualized churn patterns and correlations.
-**3. Feature Engineering** – created new features like `tenure_group`.
-**4. Modeling** – tested Logistic Regression, Random Forest, and XGBoost.
-**5. Evaluation** – measured accuracy, precision, recall, and F1-score.
-**6. Dashboard Creation (Power BI)** – designed an interactive churn analysis dashboard.
-
-
-## Power BI Dashboard
-
-The **Telecom Customer Churn Dashboard** in Power BI provides a visual and interactive way to explore churn data, including:
-
-* **KPIs** – Total Customers, Churned Customers, Churn %, Average Tenure.
-* **Churn Breakdown** – by Contract type, Tenure segment, Gender, Payment method, and Multiple lines.
-* **Customer Segment Filters** – filter by Internet service, gender, and senior citizen status.
-* **Visual Insights** – highlight high churn groups using color-coded charts (red = high churn risk, green/blue = lower churn).
-
-This dashboard allows stakeholders to **quickly identify high-risk customer segments** and explore churn patterns without coding.
-
-
-## Tech Stack
-
-**Python** – Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-
-**Power BI** – For dashboard and visualization
-
-**Machine Learning** – Logistic Regression, Random Forest, XGBoost
-
-
-## Results
-
-* Achieved **79.49% accuracy** on churn prediction.
-* Key churn factors: Contract type, Tenure, Monthly Charges.
-* Power BI dashboard provides **real-time visual insights** for decision-making.
-
-
-## How to Run
-
-**Clone this repo:**
-
-```bash
-git clone https://github.com/kptanuja/Customer-Churn-Analysis.git
+```
+Telecom-Customer-Churn/
+│
+├── customerchurn_analysis.ipynb        # Jupyter notebook with data preprocessing & EDA
+├── CustomerChurn.pbix                  # Power BI dashboard screenshot
+├── README.md                           # Project documentation
+└── Customerchurn.csv                   # Dataset folder 
 ```
 
-**Run the Python scripts for modeling:**
+---
 
-```bash
-python churn_analysis.py
-```
+## 📊 Dashboard Insights
 
-**View the Power BI Dashboard:**
+### 1️⃣ **Key Metrics**
 
-1. Open the `.pbix` file in Power BI Desktop.
-2. Use the filters and visuals to explore churn data interactively.
+* **Total Customers**: `7043`
+* **Churned Customers**: `1869`
+* **Churn Rate**: `27%`
 
+### 2️⃣ **Churn by Contract Type**
+
+* **Month-to-Month** customers have the highest churn (`1655` customers).
+* **One-Year** and **Two-Year** contracts have significantly lower churn.
+
+### 3️⃣ **Churn by Tenure Segment**
+
+* Customers in their **first year** have the highest churn rate (`43.24%`).
+* Churn decreases with longer tenure.
+
+### 4️⃣ **Churn by Payment Method**
+
+* **Electronic Check** users have the highest churn.
+* Customers using **automatic bank transfers** or **credit cards** churn less.
+
+### 5️⃣ **Churn by Multiple Lines**
+
+* Churn rates are fairly similar across multiple line usage categories.
+
+---
+
+## 🔍 Key Insights
+
+* **Short-term contracts** and **first-year customers** are most likely to churn.
+* **Electronic check payment method** correlates strongly with higher churn.
+* **Loyalty programs** or **discounted long-term contracts** could help improve retention.
+
+---
+
+## 🚀 How to Use
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/telecom-customer-churn.git
+   cd telecom-customer-churn
+   ```
+2. Open the Jupyter Notebook:
+
+   ```bash
+   jupyter notebook customerchurn_analysis.ipynb
+   ```
+3. Explore the Power BI dashboard (or view the screenshot provided).
+
+---
+
+## 📌 Future Improvements
+
+* Implement a **Machine Learning model** to predict churn probability.
+* Add **customer segmentation analysis** for targeted retention campaigns.
+* Build an **interactive web app** for real-time churn monitoring.
