@@ -5,8 +5,6 @@
 This project predicts customer churn using data analysis, machine learning, and an interactive Power BI dashboard.
 It helps businesses identify at-risk customers and take proactive steps to retain them.
 
----
-
 ## Dataset
 
 The dataset contains telecom customer details such as:
@@ -17,7 +15,6 @@ The dataset contains telecom customer details such as:
 * Payment method
 * Churn status
 
----
 
 ## Steps Performed
 
@@ -28,7 +25,6 @@ The dataset contains telecom customer details such as:
 **5. Evaluation** – measured accuracy, precision, recall, and F1-score.
 **6. Dashboard Creation (Power BI)** – designed an interactive churn analysis dashboard.
 
----
 
 ## Power BI Dashboard
 
@@ -41,7 +37,6 @@ The **Telecom Customer Churn Dashboard** in Power BI provides a visual and inter
 
 This dashboard allows stakeholders to **quickly identify high-risk customer segments** and explore churn patterns without coding.
 
----
 
 ## Tech Stack
 
@@ -49,7 +44,6 @@ This dashboard allows stakeholders to **quickly identify high-risk customer segm
 **Power BI** – For dashboard and visualization
 **Machine Learning** – Logistic Regression, Random Forest, XGBoost
 
----
 
 ## Results
 
@@ -57,7 +51,6 @@ This dashboard allows stakeholders to **quickly identify high-risk customer segm
 * Key churn factors: Contract type, Tenure, Monthly Charges.
 * Power BI dashboard provides **real-time visual insights** for decision-making.
 
----
 
 ## How to Run
 
