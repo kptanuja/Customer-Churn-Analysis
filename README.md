@@ -41,7 +41,9 @@ This dashboard allows stakeholders to **quickly identify high-risk customer segm
 ## Tech Stack
 
 **Python** – Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+
 **Power BI** – For dashboard and visualization
+
 **Machine Learning** – Logistic Regression, Random Forest, XGBoost
 
 
